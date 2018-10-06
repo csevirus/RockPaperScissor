@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Result</title>
+</head>
+<body>
+  {% if user == comp %}
+  <h1>Opps !! It's a TIE..</h1>
+  {% elif user == "r" %}
+    {% if comp == "s" %}
+    <h1>Congratulations You win. Computer choose SCISSOR</h1>
+    {% else %}
+    <h1>You Lose... Computer choose PAPER</h1>
+    {% endif %}
+  {% elif user == "p" %}
+    {% if comp == "r" %}
+    <h1>Congratulations You win. Computer choose ROCK</h1>
+    {% else %}
+    <h1>You Lose... Computer choose SCISSOR</h1>
+    {% endif %}
+  {% elif user == "s" %}
+    {% if comp == "p" %}
+    <h1>Congratulations You win. Computer choose PAPER</h1>
+    {% else %}
+    <h1>You Lose... Computer choose ROCK</h1>
+    {% endif %}
+  {% endif %}
+   <a href="/">Try again</a>
+</body>
+</html>
